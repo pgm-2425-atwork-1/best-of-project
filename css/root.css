@@ -1,19 +1,79 @@
 :root {
---base-dark:hsla(223, 28%, 15%, 1); 
---base-light:hsla(0, 0%, 100%, 1);
---shade-dark: hsla(222, 44%, 8%, 1);
---shade-light: hsla(228, 100%, 96%, 1);
---subtle-dark: hsla(226, 14%, 30%, 1);
---subtle-light: hsla(223, 82%, 90%, 1);
---tint-dark: hsla(223, 8%, 65%, 1);
---tint-light: hsla(226, 14%, 30%, 1);
---contrast-dark: hsla(0, 0%, 100%, 1);
---contrast-dark:hsla(223, 28%, 15%, 1);
---accent-dark: hsla(225, 34%, 37%, 1);
---accent-light: hsla(223, 100%, 84%, 1);
---accent-subtle-dark: hsla(223, 100%, 84%, 1);
---accent-subtle-light: hsla(225, 34%, 37%, 1);
---sun: hsla(68, 100%, 82%, 1);
+  --base-dark: hsla(223, 28%, 15%, 1);
+  --base-light: hsla(0, 0%, 100%, 1);
+  --shade-dark: hsla(222, 44%, 8%, 1);
+  --shade-light: hsla(228, 100%, 96%, 1);
+  --subtle-dark: hsla(226, 14%, 30%, 1);
+  --subtle-light: hsla(223, 82%, 90%, 1);
+  --tint-dark: hsla(223, 8%, 65%, 1);
+  --tint-light: hsla(226, 14%, 30%, 1);
+  --contrast-dark: hsla(0, 0%, 100%, 1);
+  --contrast-dark: hsla(223, 28%, 15%, 1);
+  --accent-dark: hsla(225, 34%, 37%, 1);
+  --accent-light: hsla(223, 100%, 84%, 1);
+  --accent-subtle-dark: hsla(223, 100%, 84%, 1);
+  --accent-subtle-light: hsla(225, 34%, 37%, 1);
+  --sun: hsla(68, 100%, 82%, 1);
 }
 
+body {
+  background-color: var(--base-dark);
+}
 
+a {
+   text-decoration: none;
+}
+
+h1 {
+  font-family: Fira Sans, sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+/* ======= header ============ */
+
+header {
+  position: sticky;
+  top: 0;
+  margin: 2rem;
+  z-index: 1000;
+  border-bottom: 0.5px solid white;
+}
+
+.nav-container {
+  display: flex;
+  margin: 2rem;
+  justify-content: space-between;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.sun {
+width: 1.5rem;
+height: 1.5rem;
+cursor: pointer;
+
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-family: Fira Mono, sans-serif;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-dark);
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 5px;
+  }
