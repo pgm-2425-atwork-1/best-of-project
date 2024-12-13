@@ -1,0 +1,70 @@
+/* ======= INDEX ============ */
+
+.index-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 4rem 0 4rem 0;
+}
+
+.text-column {
+  flex: 1;
+  margin-left: 3rem;
+}
+
+.image-column {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ======= ALBUMS ============ */
+
+.albums-container {
+padding: 1rem;
+}
+
+.cover-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 3rem 0;
+
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cover-container article {
+  flex: 0 1 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.cover img {
+  width: 100%;
+}
+
+.cover p {
+  text-align: center;
+}
+
+.cover time {
+  color: white;
+  align-items: center;
+}
+
+.go-to-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 0;
+  border-top: 1px solid var(--tint-dark);
+}
