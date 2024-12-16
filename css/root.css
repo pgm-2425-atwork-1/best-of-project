@@ -51,7 +51,6 @@ h3 {
 p {
   font-family: Fira Mono, sans-serif;
   font-size: 1.2rem;
-  line-height: 30px;
   color: var(--contrast-dark);
 }
 
@@ -59,26 +58,39 @@ button {
   font-size: 1.5rem;
   background-color: var(--tint-light);
   padding: 1.5rem;
-  color: var(--contrast-dark);
+  border-radius: 1rem;
   border: none;
   cursor: pointer;
   transition: transform 0.5s;
-}
-
-.tag-buttons button {
-  font-size: 1rem;
-  align-items: center;
-  color: var(--tint-dark);
-  margin-top: 1rem;
-  padding: 1.4rem;
-  border-radius: 1.5rem;
+  color: white;
 }
 
 button:hover {
   transform: scale(1.1);
 }
 
+.go-to-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem 0;
+  border-top: 1px solid var(--tint-dark);
+}
+
+main {
+  padding: 1rem;
+  }
+
 /* ======= header ============ */
+
+
+
+
+
+
+
+
+
 
 header {
   position: sticky;
@@ -130,6 +142,10 @@ header {
 }
 
 /* ======= hamburger  ============ */
+
+.hamburger {
+  cursor: pointer;
+}
 
 .nav-links.active {
   display: inline-block;
