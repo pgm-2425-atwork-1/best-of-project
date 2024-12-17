@@ -32,7 +32,8 @@ a {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  padding-bottom: 1rem;
   color: var(--contrast-dark);
 }
 
@@ -52,12 +53,14 @@ p {
   font-family: Fira Mono, sans-serif;
   font-size: 1.2rem;
   color: var(--contrast-dark);
+  padding: 1rem 0;
 }
 
 button {
   font-size: 1.5rem;
   background-color: var(--tint-light);
   padding: 1.5rem;
+  margin: 2rem 0;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
@@ -72,7 +75,6 @@ button:hover {
 .go-to-buttons {
   display: flex;
   justify-content: center;
-  gap: 10px;
   padding: 1rem 0;
   border-top: 1px solid var(--tint-dark);
 }
@@ -83,15 +85,6 @@ main {
 
 /* ======= header ============ */
 
-
-
-
-
-
-
-
-
-
 header {
   position: sticky;
   top: 0;
@@ -99,14 +92,14 @@ header {
   border-bottom: 0.5px solid var(--tint-dark);
 }
 
-.nav-block {
-  margin-right: auto;
-}
-
 .nav-container {
   display: flex;
   margin: 1rem;
-  justify-content: right;
+  justify-content: center; 
+}
+
+.nav-block {
+  margin-right: auto;
 }
 
 .nav-right {
@@ -114,14 +107,9 @@ header {
   align-items: center;
 }
 
-.sun {
-  width: 1.5rem;
-  height: 1.5rem;
-  cursor: pointer;
-}
-
 .nav-links {
-  display: flex;
+  display: none;
+  flex-direction: column;
   align-items: center;
   list-style: none;
 }
@@ -130,8 +118,8 @@ header {
   color: white;
   text-decoration: none;
   font-family: Fira Mono, sans-serif;
-  font-size: 2rem;
-  padding-left: 2rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 .nav-links a:hover {
@@ -141,9 +129,22 @@ header {
   text-decoration-thickness: 5px;
 }
 
+.sun {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
 /* ======= hamburger  ============ */
 
 .hamburger {
+  display: block;
+  color: white;
+  padding-left: 1rem;
   cursor: pointer;
 }
 

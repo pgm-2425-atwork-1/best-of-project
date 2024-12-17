@@ -4,13 +4,19 @@
   display: flex;
 }
 
+.image-column {
+  display: none;
+}
+
 /* ======= ALBUMS ============ */
 
 .cover-container {
   display: flex;
+  width: 80%;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 3rem 0;
+  margin: 0 auto;
+
 }
 
 .cover {
