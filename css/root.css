@@ -21,8 +21,8 @@ body {
   font-family: Fira Sans, sans-serif;
 }
 
-a {
-  text-decoration: none;
+main {
+  padding: 1rem;
 }
 
 .logo {
@@ -49,39 +49,65 @@ h3 {
   color: var(--tint-dark);
 }
 
+h4 {
+  font-family: Fira Sans, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--contrast-dark);
+  padding: 1rem 0;
+}
+
 p {
-  font-family: Fira Mono, sans-serif;
+  font-family: Fira Sans, sans-serif;
   font-size: 1.2rem;
   color: var(--contrast-dark);
   padding: 1rem 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.title-container {
+  padding: 5rem 0;
+}
+
+/* ======= buttons ============ */
+
 button {
-  font-size: 1.5rem;
-  background-color: var(--tint-light);
-  padding: 1.5rem;
-  margin: 2rem 0;
-  border-radius: 1rem;
   border: none;
   cursor: pointer;
   transition: transform 0.5s;
-  color: white;
+  font-size: 1rem;
+  background-color: var(--tint-light);
+  padding: 1rem;
+  margin-right: 0.5rem;
+}
+
+button a {
+  text-decoration: none;
+  color: var(--tint-dark);
 }
 
 button:hover {
   transform: scale(1.1);
 }
 
+.index-button {
+  font-size: 1.5rem;
+  background-color: var(--tint-light);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: var(--tint-dark);
+}
+
 .go-to-buttons {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
+  margin-top: 2rem;
   border-top: 1px solid var(--tint-dark);
 }
-
-main {
-  padding: 1rem;
-  }
 
 /* ======= header ============ */
 
@@ -95,7 +121,7 @@ header {
 .nav-container {
   display: flex;
   margin: 1rem;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .nav-block {
@@ -162,7 +188,6 @@ header {
 .nav-links.active li {
   padding: 1rem;
   border-bottom: 1px solid white;
-  
 }
 
 .nav-links.active a {

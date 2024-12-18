@@ -1,23 +1,10 @@
 /* ======= INDEX ============ */
 
-.index-container {
-  display: flex;
-}
-
 .image-column {
   display: none;
 }
 
 /* ======= ALBUMS ============ */
-
-.cover-container {
-  display: flex;
-  width: 80%;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 0 auto;
-
-}
 
 .cover {
   display: flex;
@@ -27,9 +14,10 @@
 
 .cover img {
   width: 100%;
-
 }
-.cover p {
+
+.cover p,
+.cover h4 {
   text-align: center;
 }
 
@@ -38,7 +26,12 @@
   align-items: center;
 }
 
-.tag-buttons {
+.tags {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.tag {
   font-size: 1rem;
   color: var(--tint-dark);
   background-color: var(--tint-light);
@@ -46,6 +39,36 @@
   margin-top: 2rem;
   border: none;
   border-radius: 2rem;
-  text-align: center;
   cursor: pointer;
+}
+
+/* ======= MOVIES & SERIES  ============ */
+
+.movies-container,
+.albums-container,
+.series-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.movie-card,
+.serie-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.movie-card img,
+.serie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-card p,
+.serie-card p {
+  color: var(--tint-dark);
 }
