@@ -2,9 +2,7 @@
 
 (async function albums() {
   try {
-    const response = await fetch(
-      "https://www.pgm.gent/data/bestof2024/albums.json"
-    );
+    const response = await fetch("https://www.pgm.gent/data/bestof2024/albums.json");
     const data = await response.json();
 
     const coverContainer = document.querySelector(".cover-container");
@@ -19,9 +17,21 @@
         <time>${album.release_date}</time>
   <div class="tags">
     <button class="tag">${album.genre[0]}</button>
-    ${album.genre[1] ? `<button class="tag">${album.genre[1]}</button>` : ""}
-    ${album.genre[2] ? `<button class="tag">${album.genre[2]}</button>` : ""}
-    ${album.genre[3] ? `<button class="tag">${album.genre[3]}</button>` : ""}
+    ${
+      album.genre[1]
+        ? `<button class="tag">${album.genre[1]}</button>`
+        : ""
+    }
+    ${
+      album.genre[2]
+        ? `<button class="tag">${album.genre[2]}</button>`
+        : ""
+    }
+    ${
+      album.genre[3]
+        ? `<span class="separator"></span><button class="tag">${album.genre[3]}</button>`
+        : ""
+    }
   </div>
       `;
 
@@ -32,7 +42,8 @@
   }
 })();
 
-// fetch movies
+
+// fetch movies 
 
 (async function fetchMovies() {
   const url = "https://www.pgm.gent/data/bestof2024/movies.json";
@@ -42,7 +53,7 @@
 
     const container = document.querySelector(".movies-container");
 
-    movies.forEach((movie) => {
+    movies.forEach(movie => {
       const movieCard = document.createElement("div");
       movieCard.className = "movie-card";
 
@@ -75,7 +86,7 @@
 
     const container = document.querySelector(".series-container");
 
-    series.forEach((serie) => {
+    series.forEach(serie => {
       const serieCard = document.createElement("div");
       serieCard.className = "serie-card";
 
@@ -83,6 +94,7 @@
         <img src="${serie.image}" alt="${serie.title}">
         <div class="serie-info">
           <h4>${serie.title}</h4>
+          <button class="streaming"><a href="#" target="_blank">Netflix</a></button>
           <p>${serie.short_description}</p>
           <div>
             <button><a href="${serie.trailer_link}" target="_blank">Trailer</a></button>
@@ -97,3 +109,6 @@
     console.error("Error fetching data: ", error);
   }
 })();
+
+// fetch games
+

@@ -16,6 +16,10 @@
   --sun: hsla(68, 100%, 82%, 1);
 }
 
+.light{
+  --base:hsla(0, 0%, 100%, 1);
+}
+
 body {
   background-color: var(--base-dark);
   font-family: Fira Sans, sans-serif;
@@ -72,6 +76,11 @@ a {
   padding: 5rem 0;
 }
 
+figcaption {
+  color: var(--tint-dark);
+  padding: 1rem 0;
+}
+
 /* ======= buttons ============ */
 
 button {
@@ -103,16 +112,30 @@ button:hover {
 
 .go-to-buttons {
   display: flex;
-  justify-content: center;
   padding: 1rem 0;
-  margin-top: 2rem;
+  margin: 0 4rem 0 4rem;
+  justify-content: center;
   border-top: 1px solid var(--tint-dark);
+}
+
+.go-to-buttons a {
+margin-right: 1rem;
+}
+
+.go-to-button {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.streaming {
+border-radius: 2rem;
 }
 
 /* ======= header ============ */
 
 header {
   position: sticky;
+  background-color: var(--base-dark);
   top: 0;
   z-index: 1000;
   border-bottom: 0.5px solid var(--tint-dark);
