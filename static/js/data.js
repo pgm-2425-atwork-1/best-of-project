@@ -51,7 +51,7 @@
     const response = await fetch(url);
     const movies = await response.json();
 
-    const container = document.querySelector(".movies-container");
+    const container = document.querySelector(".movie-data");
 
     movies.forEach(movie => {
       const movieCard = document.createElement("div");
@@ -84,7 +84,7 @@
     const response = await fetch(url);
     const series = await response.json();
 
-    const container = document.querySelector(".series-container");
+    const container = document.querySelector(".series-data");
 
     series.forEach(serie => {
       const serieCard = document.createElement("div");
