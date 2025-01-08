@@ -1,16 +1,16 @@
 (async function fetchSeries() {
-    const url = "https://www.pgm.gent/data/bestof2024/series.json";
-    try {
-      const response = await fetch(url);
-      const series = await response.json();
-  
-      const container = document.querySelector(".series-data");
-  
-      series.forEach(serie => {
-        const serieCard = document.createElement("div");
-        serieCard.className = "serie-card";
-  
-        serieCard.innerHTML = `
+  const url = "https://www.pgm.gent/data/bestof2024/series.json";
+  try {
+    const response = await fetch(url);
+    const series = await response.json();
+
+    const container = document.querySelector(".series-data");
+
+    series.forEach((serie) => {
+      const serieCard = document.createElement("div");
+      serieCard.className = "card";
+
+      serieCard.innerHTML = `
           <img src="${serie.image}" alt="${serie.title}">
           <div class="serie-info">
             <h4>${serie.title}</h4>
@@ -22,10 +22,10 @@
             </div>
           </div>
         `;
-  
-        container.appendChild(serieCard);
-      });
-    } catch (error) {
-      console.error("Error fetching data: ", error);
-    }
-  })();
+
+      container.appendChild(serieCard);
+    });
+  } catch (error) {
+    console.error("Error fetching data: ", error);
+  }
+})();

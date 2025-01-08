@@ -1,16 +1,16 @@
 (async function fetchMovies() {
-    const url = "https://www.pgm.gent/data/bestof2024/movies.json";
-    try {
-      const response = await fetch(url);
-      const movies = await response.json();
-  
-      const container = document.querySelector(".movie-data");
-  
-      movies.forEach(movie => {
-        const movieCard = document.createElement("div");
-        movieCard.className = "movie-card";
-  
-        movieCard.innerHTML = `
+  const url = "https://www.pgm.gent/data/bestof2024/movies.json";
+  try {
+    const response = await fetch(url);
+    const movies = await response.json();
+
+    const container = document.querySelector(".movie-data");
+
+    movies.forEach((movie) => {
+      const movieCard = document.createElement("div");
+      movieCard.className = "card";
+
+      movieCard.innerHTML = `
           <img src="${movie.image}" alt="${movie.title}">
           <div class="movie-info">
             <h4>${movie.title}</h4>
@@ -21,11 +21,10 @@
             </div>
           </div>
         `;
-  
-        container.appendChild(movieCard);
-      });
-    } catch (error) {
-      console.error("Error fetching data: ", error);
-    }
-  })();
-  
+
+      container.appendChild(movieCard);
+    });
+  } catch (error) {
+    console.error("Error fetching data: ", error);
+  }
+})();

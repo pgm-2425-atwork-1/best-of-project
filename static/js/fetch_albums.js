@@ -1,7 +1,8 @@
-
 (async function albums() {
   try {
-    const response = await fetch("https://www.pgm.gent/data/bestof2024/albums.json");
+    const response = await fetch(
+      "https://www.pgm.gent/data/bestof2024/albums.json"
+    );
     const data = await response.json();
 
     const coverContainer = document.querySelector(".cover-container");
@@ -16,16 +17,8 @@
         <time>${album.release_date}</time>
   <div class="tags">
     <button class="tag">${album.genre[0]}</button>
-    ${
-      album.genre[1]
-        ? `<button class="tag">${album.genre[1]}</button>`
-        : ""
-    }
-    ${
-      album.genre[2]
-        ? `<button class="tag">${album.genre[2]}</button>`
-        : ""
-    }
+    ${album.genre[1] ? `<button class="tag">${album.genre[1]}</button>` : ""}
+    ${album.genre[2] ? `<button class="tag">${album.genre[2]}</button>` : ""}
     ${
       album.genre[3]
         ? `<span class="separator"></span><button class="tag">${album.genre[3]}</button>`
@@ -40,4 +33,3 @@
     console.log("There is an error with fetching data:", error);
   }
 })();
-
