@@ -1,3 +1,10 @@
+// slide gallery
+
+
+
+
+
+
 // honorable mentions
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -19,3 +26,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
