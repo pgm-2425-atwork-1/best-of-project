@@ -34,14 +34,16 @@
   --sun: hsla(39, 89%, 57%, 1);
 }
 
+/* Light Mode Adjustments */
 :root.light-mode .nav-links a,
 :root.light-mode time {
   color: var(--contrast-dark);
 }
 
+/* ======= General Styles ======= */
 body {
   background-color: var(--base-dark);
-  font-family: Fira Sans, sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 main {
@@ -53,44 +55,30 @@ main {
   color: var(--contrast-dark);
 }
 
-h1 {
-  font-size: 4rem;
-  padding-bottom: 1rem;
+h1, h4, p, span {
+  font-family: 'Fira Sans', sans-serif;
   color: var(--contrast-dark);
 }
 
+h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
 h4 {
-  font-family: Fira Sans, sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--contrast-dark);
   padding: 1rem 0;
 }
 
 p {
-  font-family: Fira Sans, sans-serif;
   font-size: 1.2rem;
-  color: var(--contrast-dark);
   padding: 1rem 0;
-}
-
-.index-intro {
-  margin-bottom: 2rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--tint-dark);
 }
 
 span {
   font-size: 2rem;
   font-weight: 200;
-  color: var(--tint-dark);
-}
-
-.title-container {
-  padding: 5rem 0;
 }
 
 figcaption {
@@ -98,13 +86,31 @@ figcaption {
   padding: 1rem 0;
 }
 
-/* ======= header ============ */
+a {
+  text-decoration: none;
+  color: var(--tint-dark);
+}
 
+.index-intro {
+  margin-bottom: 2rem;
+}
+
+.title-container {
+  padding: 5rem 0;
+}
+
+/* ======= Button Base Styles ======= */
+button, .toggle, .index-button, .go-to-button, .tag {
+  cursor: pointer;
+  transition: transform var(--transition-speed) ease, background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+/* ======= Header ======= */
 header {
   position: sticky;
-  background-color: var(--base-dark);
   top: 0;
   z-index: 1000;
+  background-color: var(--base-dark);
   border-bottom: 0.5px solid var(--tint-dark);
 }
 
@@ -131,9 +137,9 @@ header {
 }
 
 .nav-links a {
-  color: white;
+  color: var(--contrast-dark);
   text-decoration: none;
-  font-family: Fira Mono, sans-serif;
+  font-family: 'Fira Mono', sans-serif;
   font-size: 1.5rem;
   padding: 0.5rem;
 }
@@ -151,15 +157,9 @@ header {
   cursor: pointer;
 }
 
-.logo {
-  font-size: 2rem;
-}
-
-/* ======= hamburger  ============ */
-
 .hamburger {
   display: block;
-  color: white;
+  color: var(--contrast-dark);
   padding-left: 1rem;
   cursor: pointer;
 }
@@ -167,40 +167,38 @@ header {
 .nav-links.active {
   display: inline-block;
   position: absolute;
-  background-color: var(--base-dark);
   top: 4rem;
   right: 0;
   width: 100%;
   height: 80rem;
+  background-color: var(--base-dark);
   text-align: right;
 }
 
 .nav-links.active li {
   padding: 1rem;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--contrast-dark);
 }
 
 .nav-links.active a {
   font-size: 4rem;
 }
 
-/* ======= footer ============ */
-
+/* ======= Footer ======= */
 .footer-container {
   display: flex;
-  width: 100%; 
-  margin: 0 auto;
   justify-content: space-between;
-  padding: 1rem 4rem; 
+  width: 100%;
+  padding: 1rem 4rem;
   border-top: 0.5px solid var(--tint-dark);
 }
 
 .footer-container a {
   color: var(--tint-dark);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color var(--transition-speed);
 }
 
 .footer-container a:hover {
-  color: var(--accent-dark); 
+  color: var(--accent-dark);
 }

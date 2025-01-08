@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta name="robots" content="noindex,nofollow">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Discover the best TV series of 2024, including highlights from Netflix, Apple TV+, and other platforms.">
+    <meta name="robots" content="noindex,nofollow">
     <title>Best of Series</title>
-    <link rel="icon" type="image/x-icon" href="static/images/favicons/favicon.svg">
+    <link rel="icon" href="static/images/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="static/images/favicons/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,80 +23,74 @@
 
 <body>
 
-
+    <!-- Header -->
     <header>
         <nav class="nav-container">
             <div class="nav-block">
                 <a class="logo" href="index.html">Best of 2024</a>
             </div>
             <div class="nav-right">
-                <button class="toggle"><img class="sun" id="sun" src="static/images/icons/sun.svg" alt="sun"></button>
+                <button class="toggle" aria-label="Toggle Theme">
+                    <img class="sun" id="sun" src="static/images/icons/sun.svg" alt="Toggle Light/Dark Theme">
+                </button>
                 <ul class="nav-links" id="menu">
-                    <li><a href="index.html">Intro</a></li>
-                    <li><a href="albums.html">Albums</a></li>
-                    <li><a href="films.html">Films</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="series.html">Series</a></li>
+                    <li><a href="index.html" title="Go to Intro Page">Intro</a></li>
+                    <li><a href="albums.html" title="Go to Albums Page">Albums</a></li>
+                    <li><a href="films.html" title="Go to Films Page">Films</a></li>
+                    <li><a href="games.html" title="Go to Games Page">Games</a></li>
+                    <li><a href="series.html" title="Go to Series Page">Series</a></li>
                 </ul>
             </div>
-            <img class="hamburger" id="hamburger" src="static/images/icons/burger-light.svg" alt="nog in te vullen">
+            <img class="hamburger" id="hamburger" src="static/images/icons/burger-light.svg" alt="Open Navigation Menu">
         </nav>
     </header>
 
-
-    <!-- main start -->
-
+    <!-- Main Content -->
     <main class="series-container">
-
         <div class="title-container">
-
             <span>My favorite</span>
             <h1>Series</h1>
             <p>
-                Last year I said Netflix kept on releasing interesting series but I think I cancelled and restarted my
-                subscription twice this year. There was a definite lack of good series and I would have to look
-                elsewhere to find good content. I even re-watched Weeds and Mad Men because I was looking for something
-                good. Luckily, Apple launched Apple TV+ with two fun series and at the end of the year, the Witcher
-                landed on Netflix, so all in all, it wasn’t that bad.
+                Last year I said Netflix kept on releasing interesting series, but I think I cancelled and restarted my
+                subscription twice this year. There was a definite lack of good series, and I had to look
+                elsewhere to find good content. I even re-watched Weeds and Mad Men because I was searching for something
+                good. Luckily, Apple launched Apple TV+ with two fun series, and at the end of the year, the Witcher
+                landed on Netflix. So all in all, it wasn’t that bad.
             </p>
         </div>
 
-<div class="series-data"></div>
-
+        <div class="series-data" aria-label="Series Data Container">
+            <!-- Content dynamically fetched from the API -->
+        </div>
     </main>
 
-
+    <!-- Navigation Buttons -->
     <div class="go-to-buttons">
         <a class="go-to-button" href="games.html">
-          <img src="static/images/icons/arrow-left.svg" alt="Previous">
-          Previous: Games
+            <img src="static/images/icons/arrow-left.svg" alt="Previous Page">
+            Previous: Games
         </a>
-      </div>
+    </div>
 
- 
-
-
-    <!-- footer start -->
-
+    <!-- Footer -->
     <footer>
-
         <div class="footer-container">
-
-            <p>© 2024 Joanna Jodel --- 
-                 Based on <a href="https://bestof2019.johanronsse.be/ ">©
-                        Johan Ronsse</a></p>
-
+            <p>
+                © 2024 Joanna Jodel ---
+                Based on <a href="https://bestof2019.johanronsse.be/" target="_blank" rel="noopener noreferrer">© Johan Ronsse</a>
+            </p>
             <div class="follow">
-                <p>Follow me on <a href="https://www.instagram.com/fjordurr/" target="_blank">XXX</a></p>
+                <p>
+                    Follow me on <a href="https://www.instagram.com/fjordurr/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </p>
             </div>
-
         </div>
-
     </footer>
 
-    <script src="static/js/fetch_series.js"></script>
-    <script src="static/js/hamburger.js"></script>
-    <script src="static/js/toggle.js"></script>
+    <!-- Scripts -->
+    <script src="static/js/fetch_series.js" defer></script>
+    <script src="static/js/hamburger.js" defer></script>
+    <script src="static/js/toggle.js" defer></script>
 </body>
 
 </html>

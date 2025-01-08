@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta name="robots" content="noindex,nofollow">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Explore the Best of 2024, including favorite albums, films, games, and series, curated for you.">
+    <meta name="robots" content="noindex,nofollow">
     <title>Best of 2024</title>
-    <link rel="icon" type="image/x-icon" href="static/images/favicons/favicon.svg">
+    <link rel="icon" href="static/images/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="static/images/favicons/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,76 +23,62 @@
 
 <body>
 
-
+    <!-- Header -->
     <header>
         <nav class="nav-container">
             <div class="nav-block">
                 <a class="logo" href="index.html">Best of 2024</a>
             </div>
             <div class="nav-right">
-               <button class="toggle"><img class="sun" id="sun" src="static/images/icons/sun.svg" alt="sun"></button>
-                
+                <button class="toggle" aria-label="Toggle Theme">
+                    <img class="sun" id="sun" src="static/images/icons/sun.svg" alt="Toggle Light/Dark Theme">
+                </button>
                 <ul class="nav-links" id="menu">
-                    <li><a href="index.html">Intro</a></li>
-                    <li><a href="albums.html">Albums</a></li>
-                    <li><a href="films.html">Films</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="series.html">Series</a></li>
+                    <li><a href="index.html" title="Go to Intro Page">Intro</a></li>
+                    <li><a href="albums.html" title="Go to Albums Page">Albums</a></li>
+                    <li><a href="films.html" title="Go to Films Page">Films</a></li>
+                    <li><a href="games.html" title="Go to Games Page">Games</a></li>
+                    <li><a href="series.html" title="Go to Series Page">Series</a></li>
                 </ul>
             </div>
-            <img class="hamburger" id="hamburger" src="static/images/icons/burger-light.svg" alt="nog in te vullen">
+            <img class="hamburger" id="hamburger" src="static/images/icons/burger-light.svg" alt="Open Navigation Menu">
         </nav>
     </header>
 
-
-    <!-- main start -->
-
+    <!-- Main Content -->
     <main class="index-container">
-
         <div class="text-column">
-
             <h1>Best of 2024</h1>
-            <p class="index-intro">Just like last year, I've compiled some lists
-                of my favorite things of this year. I always
-                use this an exercise to test out some technical
-                things I didn't get to during the year, while
-                also revisiting some of my favorite content
-                and/or releases. Enjoy.</p>
-
-                <a class="index-button" href="albums.html"> Dive in -> </a>
+            <p class="index-intro">
+                Just like last year, I've compiled some lists of my favorite things of this year. I always
+                use this as an exercise to test out some technical things I didn't get to during the year,
+                while also revisiting some of my favorite content and releases. Enjoy.
+            </p>
+            <a class="index-button" href="albums.html" title="Go to Albums Page">Dive in →</a>
         </div>
-
-
         <div class="image-column">
-            <img src="static/images/favicons/intro-shape.svg" alt="nog in te vullen">
-
+            <img src="static/images/favicons/intro-shape.svg" alt="Decorative Intro Shape">
         </div>
-
-
     </main>
 
-
-    <!-- footer start -->
-
+    <!-- Footer -->
     <footer>
-
         <div class="footer-container">
-
-            <p>© 2024 Joanna Jodel --- 
-                 Based on <a href="https://bestof2019.johanronsse.be/ ">©
-                        Johan Ronsse</a></p>
-
+            <p>
+                © 2024 Joanna Jodel ---
+                Based on <a href="https://bestof2019.johanronsse.be/" target="_blank" rel="noopener noreferrer">© Johan Ronsse</a>
+            </p>
             <div class="follow">
-                <p>Follow me on <a href="https://www.instagram.com/fjordurr/" target="_blank">XXX</a></p>
+                <p>
+                    Follow me on <a href="https://www.instagram.com/fjordurr/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </p>
             </div>
-
         </div>
-
     </footer>
 
-
-    <script src="static/js/hamburger.js"></script>
-    <script src="static/js/toggle.js"></script>
+    <!-- Scripts -->
+    <script src="static/js/hamburger.js" defer></script>
+    <script src="static/js/toggle.js" defer></script>
 </body>
 
 </html>

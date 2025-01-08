@@ -1,8 +1,9 @@
-/* ======= header  ============ */
-
+/* ======= header ============ */
 @media (min-width: 75rem) {
   .nav-links {
     display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   .hamburger {
@@ -21,12 +22,6 @@
     justify-content: right;
   }
 
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
   .nav-links a {
     font-size: 2rem;
     padding-left: 2rem;
@@ -34,8 +29,7 @@
 }
 
 /* ======= footer ============ */
-
-@media (max-width: 75em) {
+@media (max-width: 75rem) {
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -46,73 +40,62 @@
     font-size: 1rem;
     text-align: center;
   }
-
-  .span {
-    display: block;
-  }
 }
 
 /* ======= index page ============ */
-
-@media (min-width: 70rem) {
-  .index-container {
+.index-container {
+  @media (min-width: 70rem) {
     display: flex;
     padding: 0;
     margin: 7rem 0;
-  }
 
-  .text-column {
-    flex: 1;
-    margin-left: 3rem;
-  }
-
-
-  .image-column {
-    position: relative;
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    align-items: center;
-    animation: slide-in 1s ease-out;
-  }
-
-  .image-column img {
-    transform: translateX(0);
-  }
-
-  @keyframes slide-in {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
+    .text-column {
+      flex: 1;
+      margin-left: 3rem;
     }
-    to {
+
+    .image-column {
+      position: relative;
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      align-items: center;
+      animation: slide-in 1s ease-out;
+    }
+
+    .image-column img {
       transform: translateX(0);
-      opacity: 1;
     }
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 /* ======= albums page ============ */
+.cover-container {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto;
 
-@media (min-width: 47rem) {
-  .cover-container {
-    display: flex;
-    width: 80%;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 75rem) {
-  .cover-container article {
-    flex: 0 1 calc(33.333% - 1rem);
-    max-width: calc(33.333% - 1rem);
+  @media (min-width: 75rem) {
+    article {
+      flex: 1 1 calc(33.333% - 1rem);
+    }
   }
 }
 
 /* ======= movies & series page ============ */
-
 @media (min-width: 65rem) {
   .movies-container,
   .series-container {
@@ -134,7 +117,6 @@
 }
 
 /* ======= games page ============ */
-
 @media (min-width: 65rem) {
   .mentions {
     width: 70%;
@@ -143,15 +125,15 @@
   .gallery {
     display: flex;
     gap: 3rem;
-  }
 
-  .gallery img {
-    transition: transform 0.5s;
-  }
+    img {
+      transition: transform 0.5s;
+    }
 
-  .gallery img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+    img:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
   }
 
   .mentions-gallery img {
@@ -174,11 +156,11 @@
   .lb-img {
     max-width: 60%;
     max-height: 70%;
-  }
 
-  .lb-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
   }
 }
