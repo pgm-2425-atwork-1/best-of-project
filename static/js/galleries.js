@@ -1,4 +1,4 @@
-// slide gallery
+
 
 // honorable mentions
 

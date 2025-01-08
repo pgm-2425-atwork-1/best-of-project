@@ -47,8 +47,8 @@ button {
   gap: 1rem;
   justify-content: center;
   margin: 0 auto;
-  padding: 1rem 0;
-  border-top: 2px solid var(--tint-light);
+  padding: 3rem 0;
+  border-top: 1px solid var(--tint-light);
 }
 
 .go-to-button {
@@ -60,7 +60,7 @@ button {
   font-weight: 600;
   width: 13rem;
   padding: 1rem 1rem;
-  border: 1px solid var(--tint-light);
+  border: 0.5px solid var(--tint-light);
   border-radius: 1rem;
   color: var(--tint-dark);
   cursor: pointer;
@@ -69,7 +69,7 @@ button {
 
 .go-to-button:hover {
   transform: translateY(-3px) scale(1.05);
-  background-color: var(--accent-light);
+  background-color: var(--tint-dark);
   color: var(--contrast-light);
 }
 
