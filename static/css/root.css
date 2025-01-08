@@ -34,7 +34,8 @@
   --sun: hsla(39, 89%, 57%, 1);
 }
 
-:root.light-mode .nav-links a {
+:root.light-mode .nav-links a,
+:root.light-mode time {
   color: var(--contrast-dark);
 }
 
@@ -79,6 +80,7 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--tint-dark);
 }
 
 span {
@@ -95,7 +97,6 @@ figcaption {
   color: var(--tint-dark);
   padding: 1rem 0;
 }
-
 
 /* ======= header ============ */
 
