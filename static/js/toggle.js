@@ -2,7 +2,9 @@ const toggleButton = document.querySelector(".toggle");
 const root = document.documentElement;
 
 function loadTheme() {
+  console.log("1", localStorage.getItem("theme"));
   const savedTheme = localStorage.getItem("theme");
+  console.log("2", localStorage.getItem("theme"));
   if (savedTheme) {
     root.classList.add(savedTheme);
     updateIcon(savedTheme);
@@ -29,6 +31,9 @@ toggleButton.addEventListener("click", () => {
     localStorage.setItem("theme", "light-mode");
     updateIcon("light-mode");
   }
+  
 });
 
+
 loadTheme();
+
