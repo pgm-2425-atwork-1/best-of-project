@@ -158,3 +158,35 @@ button:hover {
   width: 100%;
   height: auto;
 }
+
+
+
+
+
+/* ======= Tijdloze Page ======= */
+
+.top-100-container {
+  padding: 2rem;
+  background-color: white;
+}
+
+.top-100-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: black
+}
+
+.song-item {
+  padding: 1rem;
+}
+
+.song-item p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.song-item p strong {
+  color: #000;
+}
