@@ -1,119 +1,115 @@
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: var(--base-dark);
-    border-bottom: 0.5px solid var(--tint-dark);
-  }
-  
-  .header__nav {
-    display: flex;
-    margin: 1rem;
-    justify-content: center;
-  }
-  
-  .header__logo {
-    margin-right: auto;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--base-dark);
+  border-bottom: 0.5px solid var(--tint-dark);
+}
 
-  .header__logo-link{
-    font-size: 3rem;
-    color: var(--contrast-dark);
-  }
-  
-  .header__actions {
-    display: flex;
-    align-items: center;
-  }
+.header__nav {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+}
 
-  .header__theme-toggle{
-    background: none;
-    border: none;
-  }
-  
-  .header__theme-toggle:hover {
-    transform: scale(1.1);
-  }
-  
+.header__logo {
+  margin-right: auto;
+}
+
+.header__logo-link {
+  font-size: 3rem;
+  color: var(--contrast-dark);
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+}
+
+.header__theme-toggle {
+  background: none;
+  border: none;
+}
+
+.header__theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.header__nav-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.header__nav-links a {
+  color: var(--contrast-dark);
+  text-decoration: none;
+  font-family: "Fira Mono", sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.header__nav-links a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-dark);
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 5px;
+}
+
+.header__theme-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.header__hamburger {
+  display: block;
+  color: var(--contrast-dark);
+  cursor: pointer;
+}
+
+.header__nav-links.active {
+  display: inline-block;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  width: 100%;
+  height: 80rem;
+  background-color: var(--base-dark);
+  text-align: right;
+}
+
+.header__nav-links.active li {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--contrast-dark);
+}
+
+.header__nav-links.active a {
+  font-size: 4rem;
+}
+
+@media (min-width: 75rem) {
   .header__nav-links {
-    display: none;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    list-style: none;
   }
-  
-  .header__nav-links a {
-    color: var(--contrast-dark);
-    text-decoration: none;
-    font-family: "Fira Mono", sans-serif;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
-  
-  .header__nav-links a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--accent-dark);
-    text-underline-offset: 0.5rem;
-    text-decoration-thickness: 5px;
-  }
-  
-  .header__theme-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    cursor: pointer;
-  }
-  
+
   .header__hamburger {
-    display: block;
-    color: var(--contrast-dark);
-    cursor: pointer;
+    display: none;
   }
-  
-  .header__nav-links.active {
-    display: inline-block;
-    position: absolute;
-    top: 4rem;
-    right: 0;
-    width: 100%;
-    height: 80rem;
-    background-color: var(--base-dark);
-    text-align: right;
+
+  .header__logo-link {
+    font-size: 3rem;
   }
-  
-  .header__nav-links.active li {
-    padding: 0.5rem;
-    border-bottom: 1px solid var(--contrast-dark);
+
+  .header__nav {
+    justify-content: right;
   }
-  
-  .header__nav-links.active a {
-    font-size: 4rem;
+
+  .header__nav-links a {
+    font-size: 2rem;
+    padding-left: 2rem;
   }
-  
-  @media (min-width: 75rem) {
-    .header__nav-links {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-  
-    .header__hamburger {
-      display: none;
-    }
-  
-    .image-column {
-      display: block;
-    }
-  
-    .header__logo-link {
-      font-size: 3rem;
-    }
-  
-    .nav-container {
-      justify-content: right;
-    }
-  
-    .header__nav-links a {
-      font-size: 2rem;
-      padding-left: 2rem;
-    }
-  }
+}
