@@ -1,19 +1,6 @@
-/* ======= header ============ */
 
 
-/* ======= footer ============ */
-@media (max-width: 75rem) {
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-  }
 
-  .footer-container p {
-    font-size: 1rem;
-    text-align: center;
-  }
-}
 
 /* ======= index page ============ */
 .index-container {
