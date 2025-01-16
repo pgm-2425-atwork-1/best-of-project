@@ -75,6 +75,14 @@ button:hover {
   transition: filter var(--transition-speed);
 }
 
+/* tijdloze button  */
+
+.top100-button {
+  background-color: var(--tint-light);
+padding-right: 0.5rem;
+}
+
+
 /* ======= Index Page ======= */
 .image-column {
   display: none;

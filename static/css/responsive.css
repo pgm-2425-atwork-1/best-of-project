@@ -1,32 +1,5 @@
 /* ======= header ============ */
-@media (min-width: 75rem) {
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
 
-  .hamburger {
-    display: none;
-  }
-
-  .image-column {
-    display: block;
-  }
-
-  .logo {
-    font-size: 3rem;
-  }
-
-  .nav-container {
-    justify-content: right;
-  }
-
-  .nav-links a {
-    font-size: 2rem;
-    padding-left: 2rem;
-  }
-}
 
 /* ======= footer ============ */
 @media (max-width: 75rem) {
