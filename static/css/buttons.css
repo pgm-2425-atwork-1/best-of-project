@@ -1,87 +1,83 @@
 button {
-    font-size: 1rem;
-    background-color: transparent;
-    padding: 1rem;
-    border: 1px solid var(--tint-light);
-    border-radius: 0.5rem;
-    margin-right: 0.5rem;
-    color: var(--tint-light);
-  }
-  
-  button:hover {
-    color: var(--tint-dark);
-    transform: scale(1.05);
-  }
-  
-  /* Toggle Button */
-  .toggle {
-    background: none;
-    border: none;
-  }
-  
-  .toggle:hover {
-    transform: scale(1.1);
-  }
-  
-  /* index Button */
-  .index-button {
-    font-size: 1.5rem;
-    background-color: var(--tint-light);
-    padding: 1.5rem;
-    border-radius: 1rem;
-    color: var(--tint-dark);
-  }
-  
-  .index-button:hover {
-    background-color: var(--tint-dark);
-    color: var(--tint-light);
-  }
-  
-  /* go-to buttons */
-  .go-to-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 3rem 0;
-    border-top: 1px solid var(--tint-light);
-  }
-  
-  .go-to-button {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    justify-content: space-between;
-    font-size: 1rem;
-    font-weight: 600;
-    width: 13rem;
-    padding: 1rem;
-    border: 0.5px solid var(--tint-light);
-    border-radius: 1rem;
-    color: var(--tint-dark);
-  }
-  
-  .go-to-button:hover {
-    transform: translateY(-3px) scale(1.05);
-    background-color: var(--tint-dark);
-    color: var(--contrast-light);
-  }
-  
-  .go-to-button img {
-    width: 1rem;
-    height: 1rem;
-    transition: filter var(--transition-speed);
-  }
-  
-  /* tijdloze button  */
-  
-  .top100-button {
-    background-color: var(--tint-light);
+  font-size: 1rem;
+  background-color: transparent;
+  padding: 1rem;
+  border: 1px solid var(--tint-light);
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--tint-light);
+}
+
+button:hover {
+  color: var(--tint-dark);
+  transform: scale(1.05);
+}
+
+/* index Button */
+.index-button {
+  font-size: 1.5rem;
+  background-color: var(--tint-light);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: var(--tint-dark);
+}
+
+.index-button:hover {
+  background-color: var(--tint-dark);
+  color: var(--tint-light);
+}
+
+/* go-to buttons */
+.go-to-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+  border-top: 1px solid var(--tint-light);
+}
+
+.go-to-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 13rem;
+  padding: 1rem;
+  border: 0.5px solid var(--tint-light);
+  border-radius: 1rem;
+  color: var(--tint-dark);
+}
+
+.go-to-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  background-color: var(--tint-dark);
+  color: var(--contrast-light);
+}
+
+.go-to-button img {
+  width: 1rem;
+  height: 1rem;
+  transition: filter var(--transition-speed);
+}
+
+/* tijdloze button  */
+
+.top100-button {
+  background-color: var(--tint-light);
   padding-right: 0.5rem;
-  }
-  
-    /* ======= button base styles ======= */
-    button, .toggle, .index-button, .go-to-button, .tag {
-        cursor: pointer;
-        transition: transform var(--transition-speed) ease, background-color var(--transition-speed) ease, color var(--transition-speed) ease;
-      }
+}
+
+/* ======= button base styles ======= */
+button,
+.toggle,
+.index-button,
+.go-to-button,
+.tag {
+  cursor: pointer;
+  transition: transform var(--transition-speed) ease,
+    background-color var(--transition-speed) ease,
+    color var(--transition-speed) ease;
+}

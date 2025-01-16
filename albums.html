@@ -16,7 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="static/css/reset.css">
-    <link rel="stylesheet" href="static/css/root.css">
+    <link rel="stylesheet" href="static/css/variables.css">
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="stylesheet" href="static/css/header.css">
     <link rel="stylesheet" href="static/css/footer.css">
@@ -30,25 +30,25 @@
 <body>
 
     <!-- Header -->
-    <header>
-        <nav class="nav-container">
-            <div class="nav-block">
-                <a class="logo" href="index.html">Best of 2024</a>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo">
+                <a class="header__logo-link" href="index.html">Best of 2024</a>
             </div>
-            <div class="nav-right">
-                <button class="toggle" aria-label="Toggle Theme">
-                    <img class="sun" id="sun" src="static/images/icons/sun.svg" alt="Sun Icon">
+            <div class="header__actions">
+                <button class="header__theme-toggle">
+                    <img class="header__theme-icon" id="sun" src="static/images/icons/sun.svg" alt="Toggle Light/Dark Theme">
                 </button>
-                <ul class="nav-links" id="menu">
+                <ul class="header__nav-links" id="menu">
                     <li><a href="index.html" title="Go to Intro Page">Intro</a></li>
                     <li><a href="albums.html" title="Go to Albums Page">Albums</a></li>
                     <li><a href="films.html" title="Go to Films Page">Films</a></li>
                     <li><a href="games.html" title="Go to Games Page">Games</a></li>
                     <li><a href="series.html" title="Go to Series Page">Series</a></li>
-                    <li><a href="tijdloze.html" title="Go to Tijdloze Page">Tijdloze</a></li>
+                    <li class="top100-button"><a href="tijdloze.html" title="Go to Tijdloze Page">Tijdloze</a></li>
                 </ul>
             </div>
-            <img class="hamburger" id="hamburger" src="static/images/icons/burger-light.svg" alt="Hamburger Menu Icon">
+            <img class="header__hamburger" id="hamburger" src="static/images/icons/burger-light.svg" alt="Open Navigation Menu">
         </nav>
     </header>
 

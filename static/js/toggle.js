@@ -1,4 +1,4 @@
-const toggleButton = document.querySelector(".toggle");
+const toggleButton = document.querySelector(".header__theme-toggle");
 const root = document.documentElement;
 
 function loadTheme() {
