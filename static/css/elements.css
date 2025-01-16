@@ -1,64 +1,38 @@
 body {
-    background-color: var(--base-dark);
-    font-family: 'Fira Sans', sans-serif;
-  }
-  
-  main {
-    padding: 1rem;
-  }
-  
-  .logo {
-    font-size: 3rem;
-    color: var(--contrast-dark);
-  }
-  
-  h1, h4, p, span {
-    font-family: 'Fira Sans', sans-serif;
-    color: var(--contrast-dark);
-  }
-  
-  h1 {
-    font-size: 4rem;
-    padding-bottom: 1rem;
-  }
-  
-  h4 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding: 1rem 0;
-  }
-  
-  p {
-    font-size: 1.2rem;
-    padding: 1rem 0;
-  }
-  
-  span {
-    font-size: 2rem;
-    font-weight: 200;
-  }
-  
-  figcaption {
-    color: var(--tint-dark);
-    padding: 1rem 0;
-  }
-  
-  a {
-    text-decoration: none;
-    color: var(--tint-dark);
-  }
-  
-  .index-intro {
-    margin-bottom: 2rem;
-  }
-  
-  .title-container {
-    padding: 5rem 0;
-  }
-  
-  /* ======= button base styles ======= */
-  button, .toggle, .index-button, .go-to-button, .tag {
-    cursor: pointer;
-    transition: transform var(--transition-speed) ease, background-color var(--transition-speed) ease, color var(--transition-speed) ease;
-  }
-  
+  background-color: var(--base-dark);
+  font-family: "Fira Sans", sans-serif;
+}
+
+h1,
+h4,
+p,
+span {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--contrast-dark);
+}
+
+h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+p {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  color: var(--tint-dark);
+}

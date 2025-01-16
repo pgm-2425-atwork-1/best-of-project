@@ -23,7 +23,7 @@ button {
     transform: scale(1.1);
   }
   
-  /* Index Button */
+  /* index Button */
   .index-button {
     font-size: 1.5rem;
     background-color: var(--tint-light);
@@ -37,7 +37,7 @@ button {
     color: var(--tint-light);
   }
   
-  /* Go-to Buttons */
+  /* go-to buttons */
   .go-to-buttons {
     display: flex;
     gap: 1rem;
@@ -80,3 +80,8 @@ button {
   padding-right: 0.5rem;
   }
   
+    /* ======= button base styles ======= */
+    button, .toggle, .index-button, .go-to-button, .tag {
+        cursor: pointer;
+        transition: transform var(--transition-speed) ease, background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+      }
