@@ -3,6 +3,10 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
+main {
+    padding: 1rem;
+}
+
 h1,
 h4,
 p,
@@ -25,11 +29,6 @@ h4 {
 p {
   font-size: 1.2rem;
   padding: 1rem 0;
-}
-
-span {
-  font-size: 2rem;
-  font-weight: 200;
 }
 
 a {

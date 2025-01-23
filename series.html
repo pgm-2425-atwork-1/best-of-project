@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="static/css/buttons.css">
     <link rel="stylesheet" href="static/css/tags.css">
     <link rel="stylesheet" href="static/css/elements.css">
-    <link rel="stylesheet" href="static/css/cover.css">
+    <link rel="stylesheet" href="static/css/albums.css">
     <link rel="stylesheet" href="static/css/card.css">
 </head>
 
@@ -38,7 +38,8 @@
             </div>
             <div class="header__actions">
                 <button class="header__theme-toggle">
-                    <img class="header__theme-icon" id="sun" src="static/images/icons/sun.svg" alt="Toggle Light/Dark Theme">
+                    <img class="header__theme-icon" id="sun" src="static/images/icons/sun.svg"
+                        alt="Toggle Light/Dark Theme">
                 </button>
                 <ul class="header__nav-links" id="menu">
                     <li><a href="index.html" title="Go to Intro Page">Intro</a></li>
@@ -49,16 +50,17 @@
                     <li class="top100-button"><a href="tijdloze.html" title="Go to Tijdloze Page">Tijdloze</a></li>
                 </ul>
             </div>
-            <img class="header__hamburger" id="hamburger" src="static/images/icons/burger-light.svg" alt="Open Navigation Menu">
+            <img class="header__hamburger" id="hamburger" src="static/images/icons/burger-light.svg"
+                alt="Open Navigation Menu">
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="series-container">
-        <div class="title-container">
-            <span>My favorite</span>
+    <main class="content">
+        <div class="content__header">
+            <span class="content__span">My favorite</span>
             <h1>Series</h1>
-            <p>
+            <p class="content__description">
                 Last year I said Netflix kept on releasing interesting series, but I think I cancelled and restarted my
                 subscription twice this year. There was a definite lack of good series, and I had to look
                 elsewhere to find good content. I even re-watched Weeds and Mad Men because I was searching for
@@ -67,9 +69,10 @@
                 landed on Netflix. So all in all, it wasn’t that bad.
             </p>
         </div>
-
-        <div class="series-data" aria-label="Series Data Container">
+<div class="content__list-container">
+        <div class="series__list">
         </div>
+    </div>
     </main>
 
     <!-- Navigation Buttons -->
@@ -88,15 +91,17 @@
     <footer class="footer">
         <p class="footer__text">
             © 2024 Joanna Jodel ---
-            Based on <a class="footer__link" href="https://bestof2019.johanronsse.be/" target="_blank" rel="noopener noreferrer">© Johan Ronsse</a>
+            Based on <a class="footer__link" href="https://bestof2019.johanronsse.be/" target="_blank"
+                rel="noopener noreferrer">© Johan Ronsse</a>
         </p>
         <div class="footer__follow">
             <p class="footer__follow-text">
-                Follow me on <a class="footer__link" href="https://www.instagram.com/fjordurr/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                Follow me on <a class="footer__link" href="https://www.instagram.com/fjordurr/" target="_blank"
+                    rel="noopener noreferrer">Instagram</a>
             </p>
             </p>
         </div>
-</footer>
+    </footer>
 
     <!-- Scripts -->
     <script src="static/js/fetch_series.js" defer></script>

@@ -4,7 +4,7 @@
     const response = await fetch(url);
     const series = await response.json();
 
-    const container = document.querySelector(".series-data");
+    const container = document.querySelector(".series__list");
 
     series.forEach((serie) => {
       const serieCard = document.createElement("div");

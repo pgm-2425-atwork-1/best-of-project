@@ -14,7 +14,7 @@ button:hover {
 }
 
 /* index Button */
-.index-button {
+.index__button {
   font-size: 1.5rem;
   background-color: var(--tint-light);
   padding: 1.5rem;
@@ -22,7 +22,7 @@ button:hover {
   color: var(--tint-dark);
 }
 
-.index-button:hover {
+.index__button:hover {
   background-color: var(--tint-dark);
   color: var(--tint-light);
 }
@@ -73,7 +73,7 @@ button:hover {
 /* ======= button base styles ======= */
 button,
 .toggle,
-.index-button,
+.index__button,
 .go-to-button,
 .tag {
   cursor: pointer;

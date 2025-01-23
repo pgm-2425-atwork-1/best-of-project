@@ -1,0 +1,73 @@
+
+
+.albums__list {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+    margin: 1rem auto;
+    width: 100%; 
+}
+
+.albums__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--base-dark);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%; 
+}
+
+.albums__card img {
+    width: 100%; 
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.albums__card time {
+    color: var(--tint-light);
+    font-size: 0.8rem; 
+    margin-bottom: 1rem;
+}
+
+.albums__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.albums__tag {
+    background-color: var(--tint-light);
+    color: var(--tint-dark);
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem; 
+    cursor: pointer;
+}
+
+@media (min-width: 48rem) {
+    .albums__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem; 
+        width: 90%; 
+    }
+
+    .albums__card {
+        flex: 1 1 calc(50% - 1rem); 
+    }
+}
+
+@media (min-width: 75rem) {
+    .albums__list {
+        gap: 1.5rem;
+    }
+
+    .albums__card {
+        flex: 1 1 calc(33.333% - 1rem);
+    }
+}

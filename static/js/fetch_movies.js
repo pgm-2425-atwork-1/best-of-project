@@ -4,7 +4,7 @@
     const response = await fetch(url);
     const movies = await response.json();
 
-    const container = document.querySelector(".movie-data");
+    const container = document.querySelector(".movies__list");
 
     movies.forEach((movie) => {
       const movieCard = document.createElement("div");
