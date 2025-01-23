@@ -6,6 +6,7 @@ button {
   border-radius: 0.5rem;
   margin-right: 0.5rem;
   color: var(--tint-light);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
@@ -13,13 +14,13 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* index Button */
 .index__button {
   font-size: 1.5rem;
   background-color: var(--tint-light);
   padding: 1.5rem;
   border-radius: 1rem;
   color: var(--tint-dark);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .index__button:hover {
@@ -27,7 +28,6 @@ button:hover {
   color: var(--tint-light);
 }
 
-/* go-to buttons */
 .go-to-buttons {
   display: flex;
   gap: 1rem;
@@ -49,6 +49,7 @@ button:hover {
   border: 0.5px solid var(--tint-light);
   border-radius: 1rem;
   color: var(--tint-dark);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.5s ease;
 }
 
 .go-to-button:hover {
@@ -57,20 +58,13 @@ button:hover {
   color: var(--contrast-light);
 }
 
-.go-to-button img {
-  width: 1rem;
-  height: 1rem;
-  transition: filter var(--transition-speed);
-}
-
-/* ======= button base styles ======= */
 button,
 .toggle,
 .index__button,
 .go-to-button,
 .tag {
   cursor: pointer;
-  transition: transform var(--transition-speed) ease,
-    background-color var(--transition-speed) ease,
-    color var(--transition-speed) ease;
+  transition: transform 0.4s ease-in-out,
+    background-color 0.4s ease-in-out,
+    color 0.4s ease-in-out;
 }
