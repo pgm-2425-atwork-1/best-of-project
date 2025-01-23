@@ -63,13 +63,6 @@ button:hover {
   transition: filter var(--transition-speed);
 }
 
-/* tijdloze button  */
-
-.top100-button {
-  background-color: var(--tint-light);
-  padding-right: 0.5rem;
-}
-
 /* ======= button base styles ======= */
 button,
 .toggle,

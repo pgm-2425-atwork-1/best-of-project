@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="static/css/elements.css">
     <link rel="stylesheet" href="static/css/albums.css">
     <link rel="stylesheet" href="static/css/card.css">
+    <link rel="stylesheet" href="static/css/tijdloze.css">
 </head>
 
 <body>
@@ -56,11 +57,11 @@
     </header>
 
     <!-- Main Content -->
-    <main class="movies-container">
-        <div class="cover__title-container">
-            <span>Best songs of 2024</span>
+    <main class="content">
+        <div class="content__header">
+            <span class="content__span">Best songs of 2024</span>
             <h1>De tijdloze 100</h1>
-            <p>
+            <p class="content__description">
                 Some music fits neatly into lists, categorized by trends or fleeting popularity,
                 but some music transcends time itself. These are the songs that resonate across
                 generations, defying the boundaries of eras or genres. They are tijdloos—timeless.
@@ -71,11 +72,26 @@
             </p>
         </div>
 
-        <div class="top-100-container">
-            <h2>Top 100 Songs</h2>
-            <div id="top-100-content">
+
+
+        <div class="songs">
+            <section class="songs__navigation">
+                <button id="top" class="songs__button songs__button-active">Top 100</button>
+                <button id="new" class="songs__button">New In</button>
+            </section>
+
+            <div class="songs__table">
+                <div class="songs__table-column">Place</div>
+                <div class="songs__table-column">Song</div>
+                <div class="songs__table-column">Album</div>
+                <div class="songs__table-column">Released</div>
             </div>
+
+            <div id="top-100-content" class="songs__list"></div>
+            <div class="songs__pagination" id="pagination"></div>
         </div>
+
+
 
     </main>
 
@@ -103,7 +119,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="static/js/fetch100.js" defer></script>
+    <script src="static/js/top100.js"></script>
     <script src="static/js/hamburger.js" defer></script>
     <script src="static/js/toggle.js" defer></script>
 </body>

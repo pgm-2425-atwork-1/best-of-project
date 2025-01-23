@@ -1,0 +1,132 @@
+.songs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .songs__navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .songs__button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .songs__button:hover {
+    background-color: #555;
+  }
+  
+  .songs__button-active {
+    background-color: #007BFF; 
+    color: #ffffff;
+  }
+  
+
+  .songs__table {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 2fr;
+    background-color: #282828;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .songs__table-column {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #bbbbbb;
+    text-align: left;
+  }
+  
+
+  .songs__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .songs__list-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 2fr;
+    background-color: #1e1e1e;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .songs__list-item:hover {
+    transform: translateY(-3px);
+    background-color: #292929;
+  }
+  
+  .songs__place {
+    font-size: 16px;
+    font-weight: bold;
+    color: #cccccc;
+  }
+  
+  .songs__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .songs__artist {
+    font-size: 14px;
+    color: #bbbbbb;
+    margin: 0;
+  }
+  
+  .songs__album,
+  .songs__release {
+    font-size: 14px;
+    color: #aaaaaa;
+    text-align: left;
+  }
+
+  .songs__change {
+    font-size: 12px;
+    color: #888888;
+    font-style: italic;
+  }
+  
+
+  .songs__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .songs__pagination a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .songs__pagination a:hover {
+    background-color: #555;
+  }
+  
+  .songs__pagination-active {
+    background-color: #007BFF;
+    color: #ffffff;
+  }
