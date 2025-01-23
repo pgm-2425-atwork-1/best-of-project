@@ -186,3 +186,15 @@
         padding: 0.5rem 1rem;
     }
 }
+
+
+.songs__album-icon {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .songs__album-icon {
+        display: inline-block; 
+      margin-right: 0.3rem;
+    }
+}
