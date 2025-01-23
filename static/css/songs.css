@@ -1,6 +1,5 @@
 .songs {
-    width: 100%;
-    max-width: 90%;
+    width: 80%;
     margin: 0 auto;
     padding: 1rem;
     background-color: var(--base-dark);
@@ -141,6 +140,10 @@
 
 /* RESPONSIVE - MOBILE FIRST */
 @media (max-width: 768px) {
+    .songs {
+        width: 100%;
+    }
+    
     .songs__table {
         display: none; 
     }

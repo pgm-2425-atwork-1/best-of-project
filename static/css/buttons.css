@@ -1,12 +1,26 @@
+button,
+.header__theme-toggle,
+.index__button,
+.navigation-buttons__action {
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out,
+    color 0.4s ease-in-out;
+}
+
+.header__theme-toggle {
+  padding: 0;
+}
+
+/* buttons films + series */
 button {
   font-size: 1rem;
   background-color: transparent;
-  padding: 1rem;
+  padding: 0.5rem;
   border: 1px solid var(--tint-light);
   border-radius: 0.5rem;
   margin-right: 0.5rem;
   color: var(--tint-light);
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 button:hover {
@@ -14,6 +28,7 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* index button */
 .index__button {
   font-size: 1.5rem;
   background-color: var(--tint-light);
@@ -29,9 +44,7 @@ button:hover {
 }
 
 
-
-
-
+/* navigation buttons */
 .navigation-buttons {
   display: flex;
   justify-content: center; 
@@ -59,14 +72,4 @@ button:hover {
 svg {
   fill: var(--base-light); 
   flex-shrink: 0;
-}
-
-button,
-.toggle,
-.index__button,
-.navigation-buttons__action,
-.tag {
-  cursor: pointer;
-  transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out,
-    color 0.4s ease-in-out;
 }

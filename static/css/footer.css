@@ -4,6 +4,7 @@
     width: 100%;
     padding: 1rem 4rem;
     border-top: 0.5px solid var(--tint-dark);
+    margin-top: 1rem;
   }
   
   .footer__link {

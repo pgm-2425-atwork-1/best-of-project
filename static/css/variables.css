@@ -34,7 +34,7 @@
   --sun: hsla(39, 89%, 57%, 1);
 }
 
-/* Light Mode Adjustments */
+/* light mode adjustments */
 :root.light-mode .nav-links a,
 :root.light-mode time {
   color: var(--contrast-dark);
