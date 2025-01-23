@@ -1,132 +1,188 @@
 .songs {
-    max-width: 800px;
+    width: 100%;
+    max-width: 90%;
     margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .songs__navigation {
+    padding: 1rem;
+    background-color: var(--base-dark);
+}
+
+.songs__navigation {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .songs__button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .songs__button:hover {
-    background-color: #555;
-  }
-  
-  .songs__button-active {
-    background-color: #007BFF; 
-    color: #ffffff;
-  }
-  
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
 
-  .songs__table {
+.songs__button {
+    background-color: var(--tint-light);
+    color: var(--base-light); 
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1rem;
+}
+
+.songs__button:hover {
+    background-color: var(--accent-light); 
+    color: var(--contrast-dark); 
+}
+
+.songs__button-active {
+    background-color: var(--accent-dark); 
+    color: var(--contrast-dark);
+}
+
+
+.songs__table {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 2fr;
-    background-color: #282828;
-    padding: 10px 15px;
+    background-color: var(--tint-light);
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
     border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .songs__table-column {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #bbbbbb;
-    text-align: left;
-  }
-  
+}
 
-  .songs__list {
+.songs__table-column {
+    color: var(--tint-dark);
+    font-size: 1rem;
+    text-align: left;
+}
+
+.songs__list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-  }
-  
-  .songs__list-item {
+    gap: 1rem;
+}
+
+.songs__list-item {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 2fr;
-    background-color: #1e1e1e;
-    padding: 10px 15px;
-    border-radius: 5px;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--subtle-dark); 
     transition: transform 0.2s ease, background-color 0.3s ease;
-  }
-  
-  .songs__list-item:hover {
+}
+
+.songs__list-item:hover {
     transform: translateY(-3px);
-    background-color: #292929;
-  }
-  
-  .songs__place {
-    font-size: 16px;
-    font-weight: bold;
-    color: #cccccc;
-  }
-  
-  .songs__title {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-    color: #ffffff;
-  }
-  
-  .songs__artist {
-    font-size: 14px;
-    color: #bbbbbb;
-    margin: 0;
-  }
-  
-  .songs__album,
-  .songs__release {
-    font-size: 14px;
-    color: #aaaaaa;
-    text-align: left;
-  }
+    background-color: var(--subtle-dark); 
+}
 
-  .songs__change {
-    font-size: 12px;
-    color: #888888;
+.songs__place {
+    font-size: 1.5rem;
+    color: var(--contrast-light);
+    background-color: var(--accent-light); 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5px;
+}
+
+.songs__title {
+    color: var(--contrast-dark); 
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.songs__artist,
+.songs__album,
+.songs__release {
+    font-size: 1rem;
+    color: var(--tint-dark);
+    padding: 0;
+    display: flex;
+}
+
+.songs__artist {
     font-style: italic;
-  }
-  
+}
 
-  .songs__pagination {
+
+.songs__change {
+    font-size: 0.8rem;
+    color: var(--shade-light); 
+    font-style: italic;
+}
+
+
+.songs__pagination {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    gap: 10px;
-  }
-  
-  .songs__pagination a {
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.songs__pagination a {
     text-decoration: none;
-    color: #fff;
-    background-color: #333;
+    color: var(--contrast-dark); 
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-size: 14px;
-  }
-  
-  .songs__pagination a:hover {
-    background-color: #555;
-  }
-  
-  .songs__pagination-active {
-    background-color: #007BFF;
-    color: #ffffff;
-  }
+    font-size: 1rem;
+}
+
+.songs__pagination a:hover {
+    background-color: var(--accent-dark);
+}
+
+.songs__pagination-active {
+    background-color: var(--accent-light); 
+    color: var(--contrast-dark);
+}
+
+/* RESPONSIVE - MOBILE FIRST */
+@media (max-width: 768px) {
+    .songs__table {
+        display: none; 
+    }
+
+    .songs__list-item {
+        grid-template-columns: 5rem 1fr;
+        grid-template-rows: auto auto;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .songs__place {
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .songs__title,
+    .songs__artist {
+        grid-column: 1 / 3;
+        padding: 0;
+    }
+
+    .songs__album {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        align-self: flex-start;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .songs__release {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        text-align: right;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        justify-content: right;
+    }
+
+    .songs__navigation {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .songs__button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
