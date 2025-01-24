@@ -1,14 +1,13 @@
-figcaption {
-  color: var(--tint-dark);
-  padding: 1rem 0;
-}
-
 .index__intro {
   margin-bottom: 2rem;
 }
 
 .index__image {
   display: none;
+}
+
+.index__text {
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 70rem) {
@@ -31,7 +30,7 @@ figcaption {
       animation: slide-in 1s ease-out;
     }
 
-    .index__image img {
+    .index__image {
       transform: translateX(0);
     }
   }
@@ -110,10 +109,10 @@ figcaption {
 
 .content__divider {
   border-top: 0.5px solid var(--tint-dark);
-  width: 80vw; 
-  position: relative; 
-  left: 50%; 
-  transform: translateX(-50%); 
+  width: 80vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 2rem;
 }
 
@@ -136,7 +135,12 @@ figcaption {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Lightbox Section */
+.gallery__caption {
+  color: var(--tint-dark);
+  padding: 1rem 0;
+}
+
+/* gallery lightbox*/
 .lightbox {
   display: none;
   position: fixed;
@@ -164,12 +168,21 @@ figcaption {
   border-radius: 8px;
 }
 
-/* Media Queries */
-@media (min-width: 65rem) {
-  .container {
-    width: 70%;
-  }
+.lightbox__close {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--base-dark);
+  border: none;
+  cursor: pointer;
+}
 
+.lightbox__close:hover {
+  color: var(--base-light);
+}
+
+@media (min-width: 65rem) {
   .gallery {
     display: flex;
     gap: 3rem;
@@ -185,31 +198,4 @@ figcaption {
     max-width: 60%;
     max-height: 70%;
   }
-}
-/* ======= Tijdloze Page ======= */
-
-.top-100-container {
-  padding: 2rem;
-  background-color: white;
-}
-
-.top-100-container h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: black;
-}
-
-.song-item {
-  padding: 1rem;
-}
-
-.song-item p {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  color: #555;
-}
-
-.song-item p strong {
-  color: #000;
 }
