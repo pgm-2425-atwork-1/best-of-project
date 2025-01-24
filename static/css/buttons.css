@@ -47,10 +47,14 @@ button:hover {
 /* navigation buttons */
 .navigation-buttons {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 1rem;
-  padding: 3rem;
-  border-top: 0.5px solid var(--tint-dark);
+  border-top: 1px solid var(--tint-light);
+  width: 90vw; 
+  position: relative; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  padding: 2rem;;
 }
 
 .navigation-buttons__action {

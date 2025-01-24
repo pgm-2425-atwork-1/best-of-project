@@ -1,11 +1,9 @@
-
-
 // honorable mentions
 
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll(".gallery img");
-  const lightbox = document.getElementById("lb-back");
-  const lightboxImg = document.querySelector(".lb-img img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.querySelector(".lightbox__image");
 
   images.forEach((img) => {
     img.addEventListener("click", () => {

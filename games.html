@@ -78,9 +78,11 @@
                 cars, and maybe some racing with friends.
             </p>
 
+        <div class="content__divider"></div>
+
             <div class="mentions">
                 <h4>Honorable Mentions</h4>
-                <p>
+                <p class="mentions__description">
                     Observation: I have a penchant for deep simulation games, but these can take
                     hundreds of hours, so I kind of only got to play them a little bit. Still, I find
                     these games enjoyable, even if it's only for a few hours.
@@ -88,25 +90,25 @@
             </div>
         </div>
 
-        <div id="lb-back" class="lb-back" aria-hidden="true">
-            <div id="lb-img" class="lb-img">
-                <img src="" alt="Zoomed image">
+        <div id="lightbox" class="lightbox">
+            <div id="lightbox__container" class="lightbox__container">
+                <img src="" alt="Zoomed image" class="lightbox__image">
             </div>
         </div>
 
         <!-- Game Gallery -->
         <div class="gallery">
-            <figure>
-                <figcaption>Anno 1800</figcaption>
-                <img src="static/images/images/games/anno-1800.jpg" class="zoomD" alt="Anno 1800 Game Image">
+            <figure class="gallery__item">
+                <figcaption class="gallery__caption">Anno 1800</figcaption>
+                <img class="gallery__image" src="static/images/images/games/anno-1800.jpg" class="zoomD" alt="Anno 1800 Game Image">
             </figure>
-            <figure>
-                <figcaption>Frostpunk</figcaption>
-                <img src="static/images/images/games/frostpunk.jpg" class="zoomD" alt="Frostpunk Game Image">
+            <figure class="gallery__item">
+                <figcaption class="gallery__caption">Frostpunk</figcaption>
+                <img class="gallery__image" src="static/images/images/games/frostpunk.jpg" class="zoomD" alt="Frostpunk Game Image">
             </figure>
-            <figure>
-                <figcaption>Planet Zoo</figcaption>
-                <img src="static/images/images/games/planet-zoo.jpg" class="zoomD" alt="Planet Zoo Game Image">
+            <figure class="gallery__item">
+                <figcaption class="gallery__caption">Planet Zoo</figcaption>
+                <img class="gallery__image" src="static/images/images/games/planet-zoo.jpg" class="zoomD" alt="Planet Zoo Game Image">
             </figure>
         </div>
     </main>
@@ -115,14 +117,16 @@
     <div class="navigation-buttons">
         <a class="navigation-buttons__action" href="films.html">
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.96967 2.46973L1.43934 8.00006L6.96967 13.5304L8.03033 12.4697L4.31066 8.75006H13V7.25006H4.31066L8.03033 3.53039L6.96967 2.46973Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.96967 2.46973L1.43934 8.00006L6.96967 13.5304L8.03033 12.4697L4.31066 8.75006H13V7.25006H4.31066L8.03033 3.53039L6.96967 2.46973Z" />
             </svg>
             <span class="navigation-buttons__label">Previous: Films</span>
         </a>
         <a class="navigation-buttons__action" href="series.html">
             <span class="navigation-buttons__label">Next: Series</span>
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.53033 13.5303L14.0607 7.99995L8.53033 2.46962L7.46967 3.53027L11.1893 7.24994L2.5 7.24994L2.5 8.74994L11.1893 8.74994L7.46967 12.4696L8.53033 13.5303Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.53033 13.5303L14.0607 7.99995L8.53033 2.46962L7.46967 3.53027L11.1893 7.24994L2.5 7.24994L2.5 8.74994L11.1893 8.74994L7.46967 12.4696L8.53033 13.5303Z" />
             </svg>
         </a>
     </div>

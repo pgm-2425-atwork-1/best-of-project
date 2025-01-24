@@ -85,17 +85,21 @@ figcaption {
   color: var(--tint-dark);
 }
 
+.secondary-paragraph {
+  padding-bottom: 5rem;
+}
+
 @media (min-width: 48rem) {
   .content__header {
-      width: 60%; 
-      margin: 0 auto; 
+    width: 60%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 75rem) {
   .content__description {
-      font-size: 1.2rem;
-      line-height: 1.8; 
+    font-size: 1.2rem;
+    line-height: 1.8;
   }
 
   .content__list-container {
@@ -104,90 +108,84 @@ figcaption {
   }
 }
 
-.movies-container,
-.series-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 0 auto;
-}
-
-@media (min-width: 65rem) {
-  .movies-container,
-  .series-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    width: 80%;
-  }
+.content__divider {
+  border-top: 0.5px solid var(--tint-dark);
+  width: 80vw; 
+  position: relative; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  padding: 2rem;
 }
 
 /* ======= Games Page ======= */
-.mentions {
-  margin: 0 auto;
-  width: 80%;
-  padding: 2rem 0;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
-.secondary-paragraph {
-  border-bottom: 1px solid var(--tint-dark);
-  padding: 2rem 0;
-  color: var(--tint-dark);
+.gallery__image {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.mentions-gallery img {
+.gallery__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Lightbox Section */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--base-dark);
+  z-index: 1000;
+}
+
+.lightbox__container {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lightbox__image {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
+/* Media Queries */
 @media (min-width: 65rem) {
-  .mentions {
+  .container {
     width: 70%;
   }
 
   .gallery {
     display: flex;
     gap: 3rem;
-
-    img {
-      transition: transform 0.5s;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-      cursor: pointer;
-    }
+    width: 70%;
+    margin: 0 auto;
   }
 
-  .mentions-gallery img {
+  .gallery__image {
     width: 50rem;
   }
 
-  .lb-back {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--base-dark);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-
-  .lb-img {
+  .lightbox__container {
     max-width: 60%;
     max-height: 70%;
-
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
   }
 }
-
 /* ======= Tijdloze Page ======= */
 
 .top-100-container {
