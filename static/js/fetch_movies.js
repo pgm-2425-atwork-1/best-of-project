@@ -4,7 +4,7 @@
     const response = await fetch(url);
     const movies = await response.json();
 
-    const container = document.querySelector(".movies__list");
+    const $container = document.querySelector(".movies__list");
 
     movies.forEach((movie) => {
       const movieCard = document.createElement("div");
@@ -22,7 +22,7 @@
           </div>
         `;
 
-      container.appendChild(movieCard);
+      $container.appendChild(movieCard);
     });
   } catch (error) {
     console.error("Error fetching data: ", error);

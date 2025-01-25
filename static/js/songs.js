@@ -31,8 +31,8 @@ function fetchData() {
 
 // navigatie instellen
 function setupNavigation() {
-  const buttons = document.querySelectorAll(".songs__button");
-  buttons.forEach((button) => {
+  const $buttons = document.querySelectorAll(".songs__button");
+  $buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const selectedList = button.id; 
       console.log("Button clicked:", selectedList); 
@@ -40,9 +40,9 @@ function setupNavigation() {
       if (currentList !== selectedList) {
         currentList = selectedList;
         currentPage = 1; 
-        buttons.forEach((btn) => btn.classList.remove("songs__button-active"));
+        $buttons.forEach((btn) => btn.classList.remove("songs__button-active"));
         button.classList.add("songs__button-active");
-        console.log("Current list updated to:", currentList);
+        console.log("list updated to:", currentList);
         render(); 
       } else {
       
@@ -82,8 +82,8 @@ function filterItems() {
 }
 
 function renderSongs(filteredItems) {
-  const container = document.getElementById("top-100-content"); 
-  container.innerHTML = ""; 
+  const $container = document.getElementById("top-100-content"); 
+  $container.innerHTML = ""; 
 
   const start = (currentPage - 1) * itemsPerPage;
   const end = start + itemsPerPage;
@@ -115,14 +115,14 @@ function renderSongs(filteredItems) {
 </div>
       <div class="songs__release">${song.release_year}</div>
     `;
-    container.appendChild(songElement);
+    $container.appendChild(songElement);
   });
 }
 
 
 function renderPagination(totalItems) {
-  const pagination = document.getElementById("pagination");
-  pagination.innerHTML = ""; 
+  const $pagination = document.getElementById("pagination");
+  $pagination.innerHTML = ""; 
 
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
@@ -135,7 +135,7 @@ function renderPagination(totalItems) {
       currentPage--;
       render();
     });
-    pagination.appendChild(prevLink);
+    $pagination.appendChild(prevLink);
   }
 
   for (let i = 1; i <= totalPages; i++) {
@@ -148,7 +148,7 @@ function renderPagination(totalItems) {
       currentPage = i;
       render();
     });
-    pagination.appendChild(pageLink);
+    $pagination.appendChild(pageLink);
   }
 
   if (currentPage < totalPages) {
@@ -160,6 +160,6 @@ function renderPagination(totalItems) {
       currentPage++;
       render();
     });
-    pagination.appendChild(nextLink);
+    $pagination.appendChild(nextLink);
   }
 }

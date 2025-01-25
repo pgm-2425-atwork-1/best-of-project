@@ -124,7 +124,7 @@
   background-color: var(--contrast-dark);
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .top100-button a:hover {
@@ -141,5 +141,5 @@
   font-size: 2rem;
   background-color: var(--contrast-dark);
   color: var(--base-dark);
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }

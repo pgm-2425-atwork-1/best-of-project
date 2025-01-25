@@ -4,7 +4,7 @@
     const response = await fetch(url);
     const series = await response.json();
 
-    const container = document.querySelector(".series__list");
+    const $container = document.querySelector(".series__list");
 
     series.forEach((serie) => {
       const serieCard = document.createElement("div");
@@ -23,7 +23,7 @@
           </div>
         `;
 
-      container.appendChild(serieCard);
+      $container.appendChild(serieCard);
     });
   } catch (error) {
     console.error("Error fetching data: ", error);

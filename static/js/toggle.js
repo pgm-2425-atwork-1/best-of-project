@@ -1,4 +1,4 @@
-const toggleButton = document.querySelector(".header__theme-toggle");
+const $toggleButton = document.querySelector(".header__theme-toggle");
 const root = document.documentElement;
 
 function loadTheme() {
@@ -13,15 +13,15 @@ function loadTheme() {
 
 function updateIcon(theme) {
   if (theme === "light-mode") {
-    toggleButton.innerHTML =
+    $toggleButton.innerHTML =
       '<img class="moon" id="moon" src="static/images/icons/moon.svg" alt="moon">';
   } else {
-    toggleButton.innerHTML =
+    $toggleButton.innerHTML =
       '<img class="sun" id="sun" src="static/images/icons/sun.svg" alt="sun">';
   }
 }
 
-toggleButton.addEventListener("click", () => {
+$toggleButton.addEventListener("click", () => {
   if (root.classList.contains("light-mode")) {
     root.classList.remove("light-mode");
     localStorage.setItem("theme", "dark-mode");

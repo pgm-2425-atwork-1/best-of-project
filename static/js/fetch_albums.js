@@ -5,7 +5,7 @@
     );
     const data = await response.json();
 
-    const albumsList = document.querySelector(".albums__list");
+    const $albumsList = document.querySelector(".albums__list");
 
     data.forEach((album) => {
       const card = document.createElement("article");
@@ -35,7 +35,7 @@
               </div>
           `;
 
-      albumsList.appendChild(card);
+      $albumsList.appendChild(card);
     });
   } catch (error) {
     console.error("Error fetching albums data:", error);
