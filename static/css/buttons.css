@@ -73,7 +73,7 @@ button:hover {
   background-color: var(--shade-dark); 
 }
 
-svg {
+.navigation-buttons__action svg {
   fill: var(--base-light); 
   flex-shrink: 0;
 }

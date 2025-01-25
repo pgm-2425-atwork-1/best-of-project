@@ -1,6 +1,7 @@
 body {
   background-color: var(--base-dark);
   font-family: "Fira Sans", sans-serif;
+  overflow-x: hidden
 }
 
 main {
@@ -11,8 +12,8 @@ h1,
 h4,
 p,
 span {
-  font-family: "Fira Sans", sans-serif;
   color: var(--contrast-dark);
+  font-weight: 500;
 }
 
 h1 {

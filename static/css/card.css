@@ -14,6 +14,9 @@
 
 .card p {
   color: var(--tint-dark);
+  font-weight: 300;
+  font-style: italic;
+
 }
 
 @media (min-width: 65rem) {
