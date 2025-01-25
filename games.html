@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="static/css/reset.css">
     <link rel="stylesheet" href="static/css/variables.css">
@@ -34,24 +34,24 @@
     <header class="header">
         <nav class="header__nav">
             <div class="header__logo">
-                <a class="header__logo-link" href="index.html">Best of 2024</a>
+                <a class="header__logo-link" href="index.html" title="Go to the homepage">Best of 2024</a>
             </div>
             <div class="header__actions">
-                <button class="header__theme-toggle">
+                <button class="header__theme-toggle" aria-label="Toggle between light and dark themes">
                     <img class="header__theme-icon" id="sun" src="static/images/icons/sun.svg"
-                        alt="Toggle Light/Dark Theme">
+                        alt="Sun icon representing light mode">
                 </button>
                 <ul class="header__nav-links" id="menu">
-                    <li><a href="index.html" title="Go to Intro Page">Intro</a></li>
-                    <li><a href="albums.html" title="Go to Albums Page">Albums</a></li>
-                    <li><a href="films.html" title="Go to Films Page">Films</a></li>
-                    <li><a href="games.html" title="Go to Games Page">Games</a></li>
-                    <li><a href="series.html" title="Go to Series Page">Series</a></li>
-                    <li class="top100-button"><a href="tijdloze.html" title="Go to Tijdloze Page">Tijdloze</a></li>
+                    <li><a href="index.html" title="Go to the introduction page">Intro</a></li>
+                    <li><a href="albums.html" title="Go to the albums page">Albums</a></li>
+                    <li><a href="films.html" title="Go to the films page">Films</a></li>
+                    <li><a href="games.html" title="Go to the games page">Games</a></li>
+                    <li><a href="series.html" title="Go to the series page">Series</a></li>
+                    <li class="top100-button"><a href="tijdloze.html" title="Go to the Tijdloze page">Tijdloze</a></li>
                 </ul>
             </div>
             <img class="header__hamburger" id="hamburger" src="static/images/icons/burger-light.svg"
-                alt="Open Navigation Menu">
+                alt="Menu icon for opening the navigation menu">
         </nav>
     </header>
 
@@ -61,13 +61,10 @@
             <span class="content__span">My favorite</span>
             <h1>Games</h1>
 
-
             <div class="slightshow">
-                <div class="slightshow__container">
-                </div>
-                <button id="nextBtn" class="slightshow__container-btn">&#10095;</button>
+                <div class="slightshow__container"></div>
+                <button id="nextBtn" class="slightshow__container-btn" aria-label="Next slide">&#10095;</button>
             </div>
-
 
             <p class="content__description">
                 2019 is the year that I properly got into sim racing. After visiting a friend and
@@ -75,21 +72,16 @@
                 is a ton of fun, and combined with an interest in F1 and rally, a lot of my leisure
                 time in 2019 had just one theme: racing.
             </p>
+
             <p class="secondary-paragraph">
                 Looking back at the blog posts on my blog about sim racing 
-                (<a class="secondary-paragraph-link" href="https://miro.medium.com/v2/resize:fit:810/1*7wcPoKrXNYBZYTvDcHxhhA.png" target="_blank">1</a>, 
-                <a class="secondary-paragraph-link" href="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fgmpzdtp6qxq71.jpg" target="_blank">2</a>, 
-                <a class="secondary-paragraph-link" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyG0cvumSumK49I6yq-LnYW7RFGZQ6bYyIsA&s" target="_blank">3</a>, 
-                <a class="secondary-paragraph-link" href="https://i.imgur.com/Q3cUg29.gif" target="_blank">4</a>), 
+                (<a class="secondary-paragraph-link" href="https://miro.medium.com/v2/resize:fit:810/1*7wcPoKrXNYBZYTvDcHxhhA.png" target="_blank" title="Go to image 1">1</a>, 
+                <a class="secondary-paragraph-link" href="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fgmpzdtp6qxq71.jpg" target="_blank" title="Go to image 2">2</a>, 
+                <a class="secondary-paragraph-link" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyG0cvumSumK49I6yq-LnYW7RFGZQ6bYyIsA&s" target="_blank" title="Go to image 3">3</a>, 
+                <a class="secondary-paragraph-link" href="https://i.imgur.com/Q3cUg29.gif" target="_blank" title="Go to image 4">4</a>), 
                 I was clearly always going a bit deeper into sim racing. The past few weeks have been so
-                busy with work that I haven't had much time to race. I think I reached a point
-                where I believe I need to put hundreds of hours into it to improve just a little
-                bit. For me, it's always been about the fun. Of course, being competitive is also
-                fun. But I can't justify it to myself to spend hours and hours behind the sim rig
-                to shave off a few seconds off a track time. So in 2020, I think I am just going to
-                race less, but focus on the parts that are fun to me: discovering new tracks, new
-                cars, and maybe some racing with friends.
-              </p>
+                busy with work that I haven't had much time to race...
+            </p>
 
             <div class="content__divider"></div>
 
@@ -97,16 +89,16 @@
                 <h4>Honorable Mentions</h4>
                 <p class="mentions__description">
                     Observation: I have a penchant for deep simulation games, but these can take
-                    hundreds of hours, so I kind of only got to play them a little bit. Still, I find
-                    these games enjoyable, even if it's only for a few hours.
+                    hundreds of hours, so I kind of only got to play them a little bit.
                 </p>
             </div>
         </div>
 
+        <!-- Lightbox -->
         <div id="lightbox" class="lightbox" style="display: none;">
             <div id="lightbox__container" class="lightbox__container">
-                <button class="lightbox__close">&times;</button>
-                <img src="" alt="Zoomed image" class="lightbox__image">
+                <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+                <img src="" alt="Zoomed-in image of the selected game" class="lightbox__image">
             </div>
         </div>
 
@@ -114,36 +106,34 @@
         <div class="gallery">
             <figure class="gallery__item">
                 <img class="gallery__image" src="static/images/images/games/anno-1800.jpg" class="zoomD"
-                    alt="Anno 1800 Game Image">
+                    alt="Cover image of the Anno 1800 game showing industrial cityscapes">
                 <figcaption class="gallery__caption">Anno 1800</figcaption>
             </figure>
             <figure class="gallery__item">
                 <img class="gallery__image" src="static/images/images/games/frostpunk.jpg" class="zoomD"
-                    alt="Frostpunk Game Image">
+                    alt="Cover image of the Frostpunk game showcasing a frozen city">
                 <figcaption class="gallery__caption">Frostpunk</figcaption>
             </figure>
             <figure class="gallery__item">
                 <img class="gallery__image" src="static/images/images/games/planet-zoo.jpg" class="zoomD"
-                    alt="Planet Zoo Game Image">
+                    alt="Cover image of the Planet Zoo game featuring a vibrant zoo environment">
                 <figcaption class="gallery__caption">Planet Zoo</figcaption>
             </figure>
         </div>
     </main>
 
-    <!-- Navigation Buttons -->
-    <div class="navigation-buttons">
+      <!-- Navigation Buttons -->
+      <div class="navigation-buttons">
         <a class="navigation-buttons__action" href="films.html">
-            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M6.96967 2.46973L1.43934 8.00006L6.96967 13.5304L8.03033 12.4697L4.31066 8.75006H13V7.25006H4.31066L8.03033 3.53039L6.96967 2.46973Z" />
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.96967 2.46973L1.43934 8.00006L6.96967 13.5304L8.03033 12.4697L4.31066 8.75006H13V7.25006H4.31066L8.03033 3.53039L6.96967 2.46973Z" />
             </svg>
             <span class="navigation-buttons__label">Previous: Films</span>
         </a>
         <a class="navigation-buttons__action" href="series.html">
             <span class="navigation-buttons__label">Next: Series</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M8.53033 13.5303L14.0607 7.99995L8.53033 2.46962L7.46967 3.53027L11.1893 7.24994L2.5 7.24994L2.5 8.74994L11.1893 8.74994L7.46967 12.4696L8.53033 13.5303Z" />
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.53033 13.5303L14.0607 7.99995L8.53033 2.46962L7.46967 3.53027L11.1893 7.24994L2.5 7.24994L2.5 8.74994L11.1893 8.74994L7.46967 12.4696L8.53033 13.5303Z" />
             </svg>
         </a>
     </div>
@@ -159,7 +149,6 @@
             <p class="footer__follow-text">
                 Follow me on <a class="footer__link" href="https://www.instagram.com/fjordurr/" target="_blank"
                     rel="noopener noreferrer">Instagram</a>
-            </p>
             </p>
         </div>
     </footer>

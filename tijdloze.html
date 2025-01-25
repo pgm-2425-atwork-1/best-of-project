@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
-        content="Discover the best films of 2024. Handpicked favorites, insightful reviews, and highlights from the year.">
+        content="Discover the best songs of 2024 with 'De Tijdloze 100', celebrating timeless tracks that transcend generations.">
     <meta name="robots" content="noindex,nofollow">
     <title>De Tijdloze</title>
     <link rel="icon" href="static/images/favicons/favicon.svg" type="image/svg+xml">
@@ -35,24 +35,24 @@
     <header class="header">
         <nav class="header__nav">
             <div class="header__logo">
-                <a class="header__logo-link" href="index.html">Best of 2024</a>
+                <a class="header__logo-link" href="index.html" title="Go to the homepage">Best of 2024</a>
             </div>
             <div class="header__actions">
-                <button class="header__theme-toggle">
+                <button class="header__theme-toggle" aria-label="Toggle between light and dark themes">
                     <img class="header__theme-icon" id="sun" src="static/images/icons/sun.svg"
-                        alt="Toggle Light/Dark Theme">
+                        alt="Sun icon representing light mode">
                 </button>
                 <ul class="header__nav-links" id="menu">
-                    <li><a href="index.html" title="Go to Intro Page">Intro</a></li>
-                    <li><a href="albums.html" title="Go to Albums Page">Albums</a></li>
-                    <li><a href="films.html" title="Go to Films Page">Films</a></li>
-                    <li><a href="games.html" title="Go to Games Page">Games</a></li>
-                    <li><a href="series.html" title="Go to Series Page">Series</a></li>
-                    <li class="top100-button"><a href="tijdloze.html" title="Go to Tijdloze Page">Tijdloze</a></li>
+                    <li><a href="index.html" title="Go to the introduction page">Intro</a></li>
+                    <li><a href="albums.html" title="Go to the albums page">Albums</a></li>
+                    <li><a href="films.html" title="Go to the films page">Films</a></li>
+                    <li><a href="games.html" title="Go to the games page">Games</a></li>
+                    <li><a href="series.html" title="Go to the series page">Series</a></li>
+                    <li class="top100-button"><a href="tijdloze.html" title="Go to the Tijdloze page">Tijdloze</a></li>
                 </ul>
             </div>
             <img class="header__hamburger" id="hamburger" src="static/images/icons/burger-light.svg"
-                alt="Open Navigation Menu">
+                alt="Menu icon for opening the navigation menu">
         </nav>
     </header>
 
@@ -72,12 +72,11 @@
             </p>
         </div>
 
-
-
+        <!-- Songs Section -->
         <div class="songs">
             <section class="songs__navigation">
-                <button id="top" class="songs__button songs__button-active">Top 100</button>
-                <button id="new" class="songs__button">New In</button>
+                <button id="top" class="songs__button songs__button-active" aria-label="View the top 100 songs">Top 100</button>
+                <button id="new" class="songs__button" aria-label="View newly added songs">New In</button>
             </section>
 
             <div class="songs__table">
@@ -90,15 +89,12 @@
             <div id="top-100-content" class="songs__list"></div>
             <div class="songs__pagination" id="pagination"></div>
         </div>
-
-
-
     </main>
 
     <!-- Navigation Buttons -->
     <div class="navigation-buttons">
-        <a class="navigation-buttons__action" href="series.html">
-            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <a class="navigation-buttons__action" href="series.html" title="Go to the series page">
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.96967 2.46973L1.43934 8.00006L6.96967 13.5304L8.03033 12.4697L4.31066 8.75006H13V7.25006H4.31066L8.03033 3.53039L6.96967 2.46973Z"/>
             </svg>
             <span class="navigation-buttons__label">Previous: Series</span>
@@ -117,11 +113,11 @@
                 Follow me on <a class="footer__link" href="https://www.instagram.com/fjordurr/" target="_blank"
                     rel="noopener noreferrer">Instagram</a>
             </p>
-
+        </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="static/js/songs.js"></script>
+    <script src="static/js/songs.js" defer></script>
     <script src="static/js/hamburger.js" defer></script>
     <script src="static/js/toggle.js" defer></script>
 </body>

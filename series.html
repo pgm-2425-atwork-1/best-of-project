@@ -34,24 +34,24 @@
     <header class="header">
         <nav class="header__nav">
             <div class="header__logo">
-                <a class="header__logo-link" href="index.html">Best of 2024</a>
+                <a class="header__logo-link" href="index.html" title="Go to the homepage">Best of 2024</a>
             </div>
             <div class="header__actions">
-                <button class="header__theme-toggle">
+                <button class="header__theme-toggle" aria-label="Toggle between light and dark themes">
                     <img class="header__theme-icon" id="sun" src="static/images/icons/sun.svg"
-                        alt="Toggle Light/Dark Theme">
+                        alt="Sun icon representing light mode">
                 </button>
                 <ul class="header__nav-links" id="menu">
-                    <li><a href="index.html" title="Go to Intro Page">Intro</a></li>
-                    <li><a href="albums.html" title="Go to Albums Page">Albums</a></li>
-                    <li><a href="films.html" title="Go to Films Page">Films</a></li>
-                    <li><a href="games.html" title="Go to Games Page">Games</a></li>
-                    <li><a href="series.html" title="Go to Series Page">Series</a></li>
-                    <li class="top100-button"><a href="tijdloze.html" title="Go to Tijdloze Page">Tijdloze</a></li>
+                    <li><a href="index.html" title="Go to the introduction page">Intro</a></li>
+                    <li><a href="albums.html" title="Go to the albums page">Albums</a></li>
+                    <li><a href="films.html" title="Go to the films page">Films</a></li>
+                    <li><a href="games.html" title="Go to the games page">Games</a></li>
+                    <li><a href="series.html" title="Go to the series page">Series</a></li>
+                    <li class="top100-button"><a href="tijdloze.html" title="Go to the Tijdloze page">Tijdloze</a></li>
                 </ul>
             </div>
             <img class="header__hamburger" id="hamburger" src="static/images/icons/burger-light.svg"
-                alt="Open Navigation Menu">
+                alt="Menu icon for opening the navigation menu">
         </nav>
     </header>
 
@@ -64,28 +64,26 @@
                 Last year I said Netflix kept on releasing interesting series, but I think I cancelled and restarted my
                 subscription twice this year. There was a definite lack of good series, and I had to look
                 elsewhere to find good content. I even re-watched Weeds and Mad Men because I was searching for
-                something
-                good. Luckily, Apple launched Apple TV+ with two fun series, and at the end of the year, the Witcher
+                something good. Luckily, Apple launched Apple TV+ with two fun series, and at the end of the year, the Witcher
                 landed on Netflix. So all in all, it wasn’t that bad.
             </p>
         </div>
         <div class="content__list-container">
-            <div class="series__list">
-            </div>
+            <div class="series__list"></div>
         </div>
     </main>
 
     <!-- Navigation Buttons -->
     <div class="navigation-buttons">
-        <a class="navigation-buttons__action" href="games.html">
-            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <a class="navigation-buttons__action" href="games.html" title="Go to the games page">
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.96967 2.46973L1.43934 8.00006L6.96967 13.5304L8.03033 12.4697L4.31066 8.75006H13V7.25006H4.31066L8.03033 3.53039L6.96967 2.46973Z"/>
             </svg>
             <span class="navigation-buttons__label">Previous: Games</span>
         </a>
-        <a class="navigation-buttons__action" href="tijdloze.html">
+        <a class="navigation-buttons__action" href="tijdloze.html" title="Go to the Tijdloze page">
             <span class="navigation-buttons__label">Next: Tijdloze</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.53033 13.5303L14.0607 7.99995L8.53033 2.46962L7.46967 3.53027L11.1893 7.24994L2.5 7.24994L2.5 8.74994L11.1893 8.74994L7.46967 12.4696L8.53033 13.5303Z"/>
             </svg>
         </a>
@@ -102,7 +100,6 @@
             <p class="footer__follow-text">
                 Follow me on <a class="footer__link" href="https://www.instagram.com/fjordurr/" target="_blank"
                     rel="noopener noreferrer">Instagram</a>
-            </p>
             </p>
         </div>
     </footer>
