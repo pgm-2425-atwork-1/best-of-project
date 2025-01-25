@@ -93,6 +93,12 @@
   font-weight: 300;
 }
 
+.secondary-paragraph-link {
+  color: var(--accent-subtle-light);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 @media (min-width: 48rem) {
   .content__header {
     width: 60%;
