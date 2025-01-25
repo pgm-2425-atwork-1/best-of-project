@@ -1,19 +1,18 @@
-# best of 2024 - > joanna
-
+# 
 
 dit is een tweede project van --> joanna <-- voor @ work 👾
 
 
-# LIVE DEMO
+# demo 
 
 link naar pages --> https://pgm-2425-atwork-1.github.io/project-2-yamushka/
 
 
+# 
 
-
-Dit is een nieuwe paragraaf, met een lege regel ertussen.
 Best of 2024 is een multimedia-bibliotheek die gebruikers in staat stelt om makkelijk door content te bladeren zoals films, series, albums, games en nummers. De data wordt ingeladen via een API en gepresenteerd in een visueel aantrekkelijke en responsieve interface. Het project combineert functionaliteit met design om een naadloze gebruikerservaring te bieden.
 
+#
 🔧 Gebruikte Stack
 	•	HTML5: Voor het opzetten van de semantische structuur van de pagina.
 	•	CSS3: Voor het stylen van de gebruikersinterface, inclusief een mobile-first ontwerp en gebruik 
